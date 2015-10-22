@@ -3,7 +3,7 @@ require 'nn'
 require 'image'
 require 'optim'
 
-local loadcaffe_wrap = require 'loadcaffe_wrapper'
+local loadcaffe_wrap = require '/home/ubuntu/neural-style/loadcaffe_wrapper'
 
 --------------------------------------------------------------------------------
 
