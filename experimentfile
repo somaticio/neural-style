@@ -1,5 +1,5 @@
 [General]
-git = https://github.com/somaticio/neural-style
+git = https://github.com/somaticio/neural-style.git
 name = Somatic.io Demo for Neural Style deep learning project
 paper = http://arxiv.org/some/neat/paper
 author = somebody@someplace.org
