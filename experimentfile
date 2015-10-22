@@ -9,11 +9,11 @@ command = sh /home/ubuntu/neural-style/models/download_models.sh
 workspace = /home/ubuntu/neural-style/somatic/init
 
 [Train]
-command = th /home/ubuntu/neural-style/neural_style.lua -gpu 0 -backend cudnn
+command = sh /home/ubuntu/neural-style/train.sh
 workspace = /home/ubuntu/neural-style/somatic/train
 
 [Test]
-command = th /home/ubuntu/neural-style/neural_style.lua -gpu 0 -backend cudnn -style_image /home/ubuntu/neural-style/examples/inputs/escher_sphere.jpg -content_image /home/ubuntu/neural-style/examples/inputs/brad_pitt.jpg -output_image /home/ubuntu/neural-style/somatic/test
+command = sh /home/ubuntu/neural-style/test.sh
 workspace = /home/ubuntu/neural-style/somatic/test
 
 [AWSOptions]
