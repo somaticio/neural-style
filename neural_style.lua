@@ -43,7 +43,7 @@ cmd:option('-seed', -1)
 
 cmd:option('-content_layers', 'relu4_2', 'layers for content')
 cmd:option('-style_layers', 'relu1_1,relu2_1,relu3_1,relu4_1,relu5_1', 'layers for style')
-d
+
 function nn.SpatialConvolutionMM:accGradParameters()
   -- nop.  not needed by our net
 end
