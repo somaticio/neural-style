@@ -15,6 +15,7 @@ workspace = /home/ubuntu/neural-style/somatic/train
 [Test]
 command = sh /home/ubuntu/neural-style/test.sh
 workspace = /home/ubuntu/neural-style/somatic/test
+mode = async
 
 [AWSOptions]
 shutdown_after_run = true
