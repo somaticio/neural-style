@@ -16,6 +16,7 @@ workspace = /home/ubuntu/neural-style/somatic/train
 command = sh /home/ubuntu/neural-style/test.sh
 workspace = /home/ubuntu/neural-style/somatic/test
 input = file
+output = file
 mode = async
 
 [AWSOptions]
