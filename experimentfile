@@ -5,16 +5,16 @@ paper = http://arxiv.org/some/neat/paper
 author = somebody@someplace.org
 
 [Initialize]
-command = sh /home/ubuntu/neural-style/models/download_models.sh
-workspace = /home/ubuntu/neural-style/somatic/init
+command = sh /home/ubuntu/experiment/models/download_models.sh
+workspace = /home/ubuntu/experiment/somatic/init
 
 [Train]
-command = sh /home/ubuntu/neural-style/train.sh
-workspace = /home/ubuntu/neural-style/somatic/train
+command = sh /home/ubuntu/experiment/train.sh
+workspace = /home/ubuntu/experiment/somatic/train
 
 [Test]
-command = sh /home/ubuntu/neural-style/test.sh
-workspace = /home/ubuntu/neural-style/somatic/test
+command = sh /home/ubuntu/experiment/test.sh
+workspace = /home/ubuntu/experiment/somatic/test
 input = file
 output = file
 mode = async
