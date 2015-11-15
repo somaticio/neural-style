@@ -22,3 +22,32 @@ Test:
 AWSOptions:
   shutdown_after_run: true
   something_else: false
+
+parameters:
+  style_image:
+    type: file
+    required: true
+    default: /home/ubuntu/experiment/examples/inputs/escher_sphere.jpg
+    flag: -style_image
+  content_image:
+    type: file
+    required: true
+    flag: -output_image
+  num_iterations:
+    type: integer
+    default: 100
+    flag: -num_interations
+  gpu:
+    default: 0
+    type: integer
+    flag: -gpu
+  print_iter:
+    flag: -print_iter
+    type: integer
+    default: 0
+  output_image:
+    required: true
+    type: file
+    flag: -output_image
+    output: true
+    
