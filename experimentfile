@@ -36,7 +36,7 @@ parameters:
   num_iterations:
     type: integer
     default: 100
-    flag: -num_interations
+    flag: -num_iterations
   gpu:
     default: 0
     type: integer
