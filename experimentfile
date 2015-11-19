@@ -32,7 +32,7 @@ parameters:
   content_image:
     type: file
     required: true
-    flag: -output_image
+    flag: -content_image
   num_iterations:
     type: integer
     default: 100
