@@ -48,6 +48,7 @@ parameters:
   output_image:
     required: true
     type: file
+    mimetype: jpg
     flag: -output_image
-    output: true
-    
+    result: true
+     
