@@ -47,7 +47,7 @@ parameters:
     default: 0
   output_image:
     required: true
-    type: file
+    type: text
     mimetype: jpg
     flag: -output_image
     result: true
