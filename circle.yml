@@ -1,11 +1,15 @@
+machine:
+  services:
+    - docker
 checkout:
   post:
     - git clone https://github.com/somaticio/somaticagent.git
 
+
 dependencies:
-  post:
-    - sudo pip install -r somaticagent/requirements.txt
+  override:
+    - echo "skipping pip install" 
 
 test:
   override:
-    - python somaticagent/apitester.py -n 5
+    - tests/test_api.sh
