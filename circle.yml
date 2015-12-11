@@ -4,7 +4,7 @@ checkout:
 
 dependencies:
   post:
-    - pip install -r somaticagent/requirements.txt
+    - sudo pip install -r somaticagent/requirements.txt
 
 test:
   override:
