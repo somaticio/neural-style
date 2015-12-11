@@ -4,4 +4,4 @@ checkout:
 
 test:
   override:
-    - tests/testsuite.sh
+    - python somaticagent/apitester.py -n 5
