@@ -6,12 +6,15 @@ General:
 
 Initialize:
   command: /home/ubuntu/experiment/models/download_models.sh
+  workspace: /home/ubuntu/experiment/somatic/
 
 Train:
   command: /home/ubuntu/experiment/train.sh
+  workspace: /home/ubuntu/experiment/somatic/
 
 Test:
   command: /home/ubuntu/experiment/test.sh
+  workspace: /home/ubuntu/experiment/somatic/
   input: file
   output: file
   mode: async
