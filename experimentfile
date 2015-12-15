@@ -41,10 +41,6 @@ parameters:
     default: 0
     type: integer
     flag: -gpu
-  print_iter:
-    flag: -print_iter
-    type: integer
-    default: 0
   output_image:
     required: true
     type: text
