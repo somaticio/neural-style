@@ -31,5 +31,5 @@ parameters:
     flag: -content_image
   num_iterations:
     type: integer
-    default: 100
+    default: 1000
     flag: -num_iterations
