@@ -1,0 +1,27 @@
+General:
+  git: https://github.com/somaticio/neural-style.git
+  name: Somatic.io Demo for Neural Style deep learning project
+  paper: http://arxiv.org/some/neat/paper
+  author: somebody@someplace.org
+
+
+Train:
+  command: /home/ubuntu/experiment/train.sh
+
+Inference:
+  command: /home/ubuntu/experiment/test.sh
+  workspace: /home/ubuntu/experiment/somatic/
+  input: file
+  output: file
+  mode: async
+
+  parameters:
+    -style_image:
+      type: file
+      required: true
+    -content_image:
+      type: file
+      required: true
+    -num_iterations:
+      type: integer
+      default: 1000
