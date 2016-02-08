@@ -19,9 +19,12 @@ Inference:
     -style_image:
       type: file
       required: true
+      flag: -style_image
     -content_image:
       type: file
       required: true
+      flag: -content_image
     -num_iterations:
       type: integer
       default: 1000
+      flag: -num_iterations
