@@ -16,7 +16,7 @@ Inference:
   mode: async
   load_model_parameter:
     flag:
-      ""
+      -data_dir
 
   parameters:
     -style_image:

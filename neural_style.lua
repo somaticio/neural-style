@@ -38,6 +38,7 @@ cmd:option('-style_scale', 1.0)
 cmd:option('-pooling', 'max', 'max|avg')
 cmd:option('-proto_file', '/data/model_cache/VGG_ILSVRC_19_layers_deploy.prototxt')
 cmd:option('-model_file', '/data/model_cache/VGG_ILSVRC_19_layers.caffemodel')
+cmd:option('-data_dir', '/data/model_cache/')
 cmd:option('-backend', 'nn', 'nn|cudnn')
 cmd:option('-seed', -1)
 
