@@ -19,6 +19,10 @@ Inference:
       -data_dir
 
   parameters:
+    -optimizer:
+      type: string
+      default: adam
+      choices: adam,lbfgs
     -style_image:
       type: file
       required: true
