@@ -22,7 +22,7 @@ Inference:
     -backend:
       type: string
       default: nn
-      choices: cudnn,nn,clnn
+      choices: nn,cudnn,clnn
     -optimizer:
       type: string
       default: adam
