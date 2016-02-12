@@ -23,9 +23,7 @@ RUN /home/ubuntu/torch/install/bin/luarocks install cutorch
 RUN /home/ubuntu/torch/install/bin/luarocks install cunn
 RUN /home/ubuntu/torch/install/bin/luarocks install nn
 
+
 #ADD * /home/ubuntu/experiment/    <--- this should work,its a bug with docker https://github.com/docker/docker/issues/18396
 ADD .docker-experimentconfig /home/ubuntu/experiment/.experimentconfig
 RUN cd /home/ubuntu/experiment && git pull #use this to force an update
-RUN cd /home/ubuntu/somaticagent && git pull #use this to force an update
-RUN pip install -r /home/ubuntu/somaticagent/requirements.txt
-RUN python /home/ubuntu/somaticagent/web.py -i
