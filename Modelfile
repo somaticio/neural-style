@@ -21,7 +21,7 @@ Inference:
   parameters:
     -backend:
       type: string
-      default: cudnn
+      default: nn
       choices: cudnn,nn,clnn
     -optimizer:
       type: string
