@@ -39,6 +39,6 @@ Inference:
       type: integer
       default: 1000
       flag: -num_iterations
-    -image_size
+    -image_size:
       type: integer
       default: 512
