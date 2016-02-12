@@ -19,6 +19,10 @@ Inference:
       -data_dir
 
   parameters:
+    -backend:
+      type: string
+      default: cudnn
+      choices: nn,cudnn,clnn
     -optimizer:
       type: string
       default: adam
