@@ -27,6 +27,15 @@ Inference:
       type: string
       default: lbfgs
       choices: adam,lbfgs
+    -style_scale:
+      default: 1.0
+      type: float
+    -content_weight:
+      type: integer
+      default: 5
+    -style_weight:
+      type: integer
+      default: 100
     -style_image:
       type: file
       required: true
