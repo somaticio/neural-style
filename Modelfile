@@ -23,7 +23,7 @@ Inference:
       max: 10
     -style_weight:
       min: 100
-      max: 10000
+      max: 1000
   parameters:
     -backend:
       type: string
