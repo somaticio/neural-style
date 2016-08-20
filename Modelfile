@@ -24,6 +24,8 @@ Inference:
     -style_weight:
       min: 100
       max: 1000
+    -optimizer:
+      choices: adam,lbfgs
   parameters:
     -backend:
       type: string
