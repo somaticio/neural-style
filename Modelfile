@@ -26,6 +26,10 @@ Inference:
       max: 1000
     -optimizer:
       choices: adam,lbfgs
+    -content_layers:
+      combos: relu0,relu3,relu7,relu12,relu1_1,relu2_1,relu3_1,relu4_1,relu5_1
+    -style_layers:
+      combos: relu0,relu3,relu7,relu12,relu1_1,relu2_1,relu3_1,relu4_1,relu5_1
   parameters:
     -backend:
       type: string
@@ -48,6 +52,10 @@ Inference:
       type: file
       required: true
       flag: -style_image
+    -content_layers:
+      type: string
+    -style_layers:
+      type: string
     -content_image:
       type: file
       required: true
