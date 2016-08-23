@@ -25,9 +25,9 @@ Inference:
       min: 100
       max: 1000
     -content_layers:
-      combos: relu0,relu3,relu7,relu12,relu1_1,relu2_1,relu3_1,relu4_1,relu5_1
+      combos: relu1_1,relu2_1,relu3_1,relu4_1,relu5_1
     -style_layers:
-      combos: relu0,relu3,relu7,relu12,relu1_1,relu2_1,relu3_1,relu4_1,relu5_1
+      combos: relu1_1,relu2_1,relu3_1,relu4_1,relu5_1
   parameters:
     -backend:
       type: string
