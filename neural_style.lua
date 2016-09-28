@@ -29,7 +29,7 @@ cmd:option('-optimizer', 'lbfgs', 'lbfgs|adam')
 cmd:option('-learning_rate', 1e1)
 
 -- Output options
-cmd:option('-print_iter', 50)
+cmd:option('-print_iter', 1)
 cmd:option('-save_iter', 100)
 cmd:option('-output_image', 'out.png')
 
@@ -285,12 +285,12 @@ local function main(params)
     local verbose = (params.print_iter > 0 and t % params.print_iter == 0)
     if verbose then
       print(string.format('Iteration %d / %d', t, params.num_iterations))
-      for i, loss_module in ipairs(content_losses) do
-        print(string.format('  Content %d loss: %f', i, loss_module.loss))
-      end
-      for i, loss_module in ipairs(style_losses) do
-        print(string.format('  Style %d loss: %f', i, loss_module.loss))
-      end
+      --for i, loss_module in ipairs(content_losses) do
+        --print(string.format('  Content %d loss: %f', i, loss_module.loss))
+      --end
+      --for i, loss_module in ipairs(style_losses) do
+        --print(string.format('  Style %d loss: %f', i, loss_module.loss))
+      --end
       print(string.format('  Total loss: %f', loss))
     end
   end
